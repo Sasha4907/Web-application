@@ -57,7 +57,7 @@ aside button{
 
 .info{
     background-color:rgb(245, 245, 245);
-
+    min-height: 320px;
     padding: 5px 10px 5em 20px;
     margin: 5px 5% 0 300px;
 }
@@ -90,4 +90,9 @@ table th, td{
 .screen_exception{
     margin-top: 2em;
     height: 50px;
+}
+
+.screen_design{
+    margin-top: 1em;
+    width: 80%;
 }
