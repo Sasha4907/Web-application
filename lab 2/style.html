@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB1</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+        <h1>
+            ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ 
+            <br>
+            З ДИСЦИПЛІНИ «ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ»
+        </h1>
+        <h2>
+            БРИГАДА №16 | Педь Олександра, Коберник Юлія
+        </h2>
+        <figure>
+            <img src="./img/ped.jpg">
+            <img src="./img/kobernik.jpg">
+        </figure>
+        <nav>
+            <div id="labs">
+                <button onclick="window.location.href = '../lab 1/main.html';">Лабораторна робота №1</button>
+                <button onclick="window.location.href = 'main.html';">Лабораторна робота №2</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №3</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №4</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №5</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №6</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №7</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №8</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №9</button>
+            </div>
+        </nav>
+    </header>
+	<br>
+	<aside>
+        <ul>
+            <li>
+                <button onclick="window.location.href = 'main.html';">Тема/мета/місце лабораторної роботи</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'style.html';">Способи підключення стилів</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'tag.html';">Селектори</button>
+                <ul>
+                    <li>
+                        <button onclick="window.location.href = 'tag.html';">Селектори тегу</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'class.html';">Селектори класів</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'id.html';">Селектори ідентифікаторів</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'another.html';">Інші селектори</button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'all.html';">CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий</button>
+            </li>
+            <li>            
+                <button onclick="window.location.href = 'summary.html';">Висновки</button>
+            </li>
+        </ul>	
+    </aside>
+
+	<div class="info">
+		<p><b>Способи підключення стилів:</b></p>
+		<ol>
+            <li>
+                Підключення зовнішнього CSS файлу за допомогою тега link. Це найбільш зручний і популярний спосіб. Він полягає в тому, що у тегу link задається атрибут href, в якому вказується шлях до CSS файлу.
+            </li>
+            <p><code>
+                    &lt;head&gt; <br>
+                    &emsp;  &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt; <br>
+                    &lt;/head&gt; <br>
+            </code></p><br>
+            <li>
+                Вбудовування CSS коду безпосередньо у тег style. Цей спосіб використовують, коли потрібно задати стилі для конкретного елементу або групи елементів на сторінці. Він полягає в тому, що у тегу style вписується CSS код.
+                <p><code>
+                    &lt;head&gt; <br>
+                    &emsp;  &lt;style&gt; <br>
+                    &emsp;&emsp;    h1 { <br>
+                    &emsp;&emsp;&emsp;  color: red; <br>
+                    &emsp;&emsp;    } <br>
+                    &emsp;&emsp;    p { <br>
+                    &emsp;&emsp;&emsp;  font-size: 14px; <br>
+                    &emsp;&emsp;    } <br>
+                    &emsp;&lt;  /style&gt; <br>
+                    &lt;/head&gt;
+                </code></p><br>
+            </li>
+            <li>
+                Використання атрибуту style безпосередньо у HTML елементів. Цей спосіб використовують, коли потрібно задати стилі лише для одного елементу.
+                <p><code>
+                    &lt;p style="color: blue;">Цей текст буде синім кольором&lt;/p&gt;
+                </code></p><br>
+            </li>
+        </ol>
+	</div>
+</body>
+</html>

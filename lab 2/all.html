@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB1</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+        <h1>
+            ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ 
+            <br>
+            З ДИСЦИПЛІНИ «ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ»
+        </h1>
+        <h2>
+            БРИГАДА №16 | Педь Олександра, Коберник Юлія
+        </h2>
+        <figure>
+            <img src="./img/ped.jpg">
+            <img src="./img/kobernik.jpg">
+        </figure>
+        <nav>
+            <div id="labs">
+                <button onclick="window.location.href = '../lab 1/main.html';">Лабораторна робота №1</button>
+                <button onclick="window.location.href = 'main.html';">Лабораторна робота №2</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №3</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №4</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №5</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №6</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №7</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №8</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №9</button>
+            </div>
+        </nav>
+    </header>
+	<br>
+	<aside>
+        <ul>
+            <li>
+                <button onclick="window.location.href = 'main.html';">Тема/мета/місце лабораторної роботи</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'style.html';">Способи підключення стилів</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'tag.html';">Селектори</button>
+                <ul>
+                    <li>
+                        <button onclick="window.location.href = 'tag.html';">Селектори тегу</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'class.html';">Селектори класів</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'id.html';">Селектори ідентифікаторів</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'another.html';">Інші селектори</button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'all.html';">CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий</button>
+            </li>
+            <li>            
+                <button onclick="window.location.href = 'summary.html';">Висновки</button>
+            </li>
+        </ul>	
+    </aside>
+
+	<div class="info">
+		<p><b></b></p>
+		<article>
+            <h3>Шрифти Текст Фон Контур</h3>
+            <p>Кава - це популярний напій, який готують із зерен кавового дерева. Вона містить кофеїн, який допомагає підняти настрій та збадьоритися.</p>
+            <code>
+                article p{ <br>
+                    /* Встановлення шрифту */ <br>
+                &emsp;    font-family: Arial, sans-serif; <br>
+                &emsp;    font-size: 16px; <br>
+                    /* Встановлення контуру */ <br>
+                &emsp;    border: 2px solid #4583ff; <br>
+                &emsp;    border-style: dashed; <br>
+                    /* Встановлення фону */ <br>
+                &emsp;    background-color: #b4c1fa; <br>
+                    /* Встановлення коліру тексту */ <br>
+                &emsp;    color: rgb(79, 79, 79); <br>
+                }
+            </code>
+
+            <h3>Таблиці</h3>
+            <table>
+                <tr>
+                  <th>Назва</th>
+                  <th>Країна походження</th>
+                  <th>Смакові властивості</th>
+                </tr>
+                <tr>
+                  <td>Арабіка</td>
+                  <td>Ефіопія</td>
+                  <td>Солодка, фруктова</td>
+                </tr>
+                <tr>
+                  <td>Робуста</td>
+                  <td>Африка</td>
+                  <td>Гірка, насичена</td>
+                </tr>
+                <tr>
+                  <td>Ліберіка</td>
+                  <td>Ліберія</td>
+                  <td>Кисла, фруктова</td>
+                </tr>
+              </table><br>
+            <code>
+                /* Стилі для таблиць */ <br>
+                article table { <br>
+                &emsp;    border-collapse: collapse; <br>
+                &emsp;    width: 80%; <br>
+                } <br>
+                <br>
+                article th, td { <br>
+                &emsp;    padding: 8px; <br>
+                &emsp;    text-align: left; <br>
+                &emsp;    border-bottom: 1px solid rgb(0, 0, 0); <br>
+                } <br>
+                <br>
+                article tr:hover { <br>
+                &emsp;    background-color: rgb(151, 151, 151); <br>
+                }
+            </code>
+
+            <h3>Списки</h3>
+            <ul>
+                <li>Арабіка
+                  <ul>
+                    <li>Індійська арабіка</li>
+                    <li>Ефіопська арабіка</li>
+                    <li>Колумбійська арабіка</li>
+                  </ul>
+                </li>
+                <li>Робуста
+                  <ul>
+                    <li>Азійська робуста</li>
+                    <li>Африканська робуста</li>
+                  </ul>
+                </li>
+                <li>Ліберіка</li>
+            </ul>
+            <code>
+                /* Стилі для списків */ <br>
+                article ul { <br>
+                &emsp;    list-style-type: none; <br>
+                  } <br>
+                  <br>
+                article li { <br>
+                &emsp;    margin: 5px; <br>
+                &emsp;    padding: 5px; <br>
+                &emsp;    border: 1px solid black; <br>
+                &emsp;    width: 60%; <br>
+                }
+            </code>
+            <h3>Анімація</h3>
+            <h4 class="animation">Каву можна приготувати різними способами, включаючи кавоварку, фільтр та аеропрес.</h4>
+            <code>
+                /* Стилі для анімацій */ <br>
+                @keyframes resize { <br>
+                &emsp;    from { <br>
+                &emsp;    &emsp;    font-size: 8px; <br>
+                &emsp;  } <br>
+                &emsp;    to { <br>
+                &emsp;&emsp;    font-size: 16px; <br>
+                &emsp;  } <br>
+                } <br>
+                <br>
+                article .animation { <br>
+                &emsp;    animation-name: resize; <br>
+                &emsp;    animation-duration: 5s; <br>
+                &emsp;    animation-iteration-count: infinite; <br>
+                &emsp;    animation-direction: alternate; <br>
+                } <br>
+            </code>
+        </article>
+	</div>
+</body>
+</html>
