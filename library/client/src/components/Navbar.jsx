@@ -61,18 +61,6 @@ export const Navbar = () => {
                             Додати публікацію
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink
-                            to={'/save'}
-                            href='/'
-                            className='text-black hover:text-gray-600'
-                            style={({ isActive }) =>
-                                isActive ? activeStyles : undefined
-                            }
-                        >
-                            Збережені книжки
-                        </NavLink>
-                    </li>
                 </ul>
             )}
 
