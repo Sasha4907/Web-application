@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB3</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+        <h1>
+            ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ 
+            <br>
+            З ДИСЦИПЛІНИ «ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ»
+        </h1>
+        <h2>
+            БРИГАДА №16 | Педь Олександра, Коберник Юлія
+        </h2>
+        <figure>
+            <img src="./img/ped.jpg">
+            <img src="./img/kobernik.jpg">
+        </figure>
+        <nav>
+            <div id="labs">
+                <button onclick="window.location.href = '../lab 1/main.html';">Лабораторна робота №1</button>
+                <button onclick="window.location.href = '../lab 2/main.html';">Лабораторна робота №2</button>
+                <button onclick="window.location.href = '../lab 3/main.html';">Лабораторна робота №3</button>
+                <button onclick="window.location.href = 'main.html';">Лабораторна робота №4</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №5</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №6</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №7</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №8</button>
+                <button onclick="window.location.href = '#';">Лабораторна робота №9</button>
+            </div>
+        </nav>
+    </header>
+	<br>
+	<aside>
+        <ul>
+            <li>
+                <button onclick="window.location.href = 'main.html';">Тема/мета/місце лабораторної роботи</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'url.html';">Способи функціонального застосування JAVASCRIPT</button>
+                <ul>
+                    <li>
+                        <button onclick="window.location.href = 'url.html';">Схема URL</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'form.html';">Обробник подій</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'entity.html';">Підстановка (entity)</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = 'tag.html';">Вставка (тег SCRIPT)</button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'array.html';">Масиви (4 пункт)</button>
+            </li>            
+            <li>
+                <button onclick="window.location.href = '#';">Виконання 6 пункту</button>
+            </li>
+            <li>            
+                <button onclick="window.location.href = 'summary.html';">Висновки</button>
+            </li>
+        </ul>	
+    </aside>
+
+	<div class="info">
+		<p><b>Обробник подій</b></p>        
+        <p><b>Приклад</b></p>
+		<form>
+            <label for="name-input">Ім'я:</label>
+            <input type="text" id="name-input" name="name-input">
+            <br>
+            <label for="email-input">Електронна пошта:</label>
+            <input type="email" id="email-input" name="email-input">
+            <br>
+            <button type="button" id="submit-button">Відправити</button>
+        </form>
+
+        <script>
+            const submitButton = document.getElementById("submit-button");
+            
+            submitButton.addEventListener("click", submitForm);
+            
+            function submitForm() {
+              const nameInput = document.getElementById("name-input").value;
+              const emailInput = document.getElementById("email-input").value;
+              
+              if (!nameInput || !emailInput) {
+                alert("Будь ласка, заповніть всі поля форми.");
+                return;
+              }
+
+              alert(`Ім'я: ${nameInput} 
+Електронна пошта: ${emailInput}`);
+              
+            }
+        </script><br>
+		<p>HTML<br><br>
+            <code>
+                &lt;label for="name-input"&gt;Ім'я:&lt;/label&gt; <br>
+                &lt;input type="text" id="name-input" name="name-input"&gt; <br>
+                &lt;label for="email-input"&gt;Електронна пошта:&lt;/label&gt; <br>
+                &lt;input type="email" id="email-input" name="email-input"&gt; <br>
+                &lt;button type="button" id="submit-button">Відправити&lt;/button&gt; <br>
+            </code>
+        </p>
+        <p>JAVASCRIPT<br><br>
+            <code>
+                const submitButton = document.getElementById("submit-button");<br>
+                submitButton.addEventListener("click", submitForm);<br>
+                <br>
+                function submitForm() {<br>
+                &emsp;  const nameInput = document.getElementById("name-input").value;<br>
+                &emsp;  const emailInput = document.getElementById("email-input").value;<br>
+                <br>
+                &emsp;  if (!nameInput || !emailInput) {<br>
+                    &emsp;  &emsp;  alert("Будь ласка, заповніть всі поля форми.");<br>
+                    &emsp;  &emsp;  return;<br>
+                    &emsp;  }<br>
+                <br>
+                &emsp;  alert(`Ім'я: ${nameInput} 
+                Електронна пошта: ${emailInput}`);<br>
+                }<br>
+            </code>
+        </p>
+	</div>
+</body>
+</html>
