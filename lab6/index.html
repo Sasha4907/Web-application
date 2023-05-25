@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>LAB1</title>
+    <title>LAB6</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,13 +22,13 @@
             <img src="./img/kobernik.jpg">
         </figure>
         <nav>
-            <div class="labs">
-                <button onclick="window.location.href = 'main.html';">Лабораторна робота №1</button>
+            <div id="labs">
+                <button onclick="window.location.href = '../lab 1/main.html';">Лабораторна робота №1</button>
                 <button onclick="window.location.href = '../lab 2/main.html';">Лабораторна робота №2</button>
                 <button onclick="window.location.href = '../lab3/main.html';">Лабораторна робота №3</button>
                 <button onclick="window.location.href = '../lab4/main.html';">Лабораторна робота №4</button>
                 <button onclick="window.location.href = '../lab5/main.html';">Лабораторна робота №5</button>
-                <button onclick="window.location.href = '../lab6/main.html';">Лабораторна робота №6</button>
+                <button onclick="window.location.href = 'main.html';">Лабораторна робота №6</button>
                 <button onclick="window.location.href = '#';">Лабораторна робота №7</button>
                 <button onclick="window.location.href = '#';">Лабораторна робота №8</button>
                 <button onclick="window.location.href = '#';">Лабораторна робота №9</button>
@@ -37,31 +37,33 @@
     </header>
     <br>
     <aside>
-        <button onclick="window.location.href = 'main.html';">Тема/мета/місце лабораторної роботи</button>
-        <button onclick="window.location.href = 'description.html';">Опис предметного середовища</button>
-        <button onclick="window.location.href = 'design.html';">Дизайн WEB-застосунка</button>
-        <button onclick="window.location.href = 'table.html';">HTML-код таблиць</button>
-        <button onclick="window.location.href = 'image.html';">HTML-код зображення</button>
-        <button onclick="window.location.href = 'list.html';">HTML-код списків</button>
-        <button onclick="window.location.href = 'link.html';">HTML-код посилань</button>
-        <button onclick="window.location.href = 'summary.html';">Висновки</button>
+        <ul>
+            <li>
+                <button onclick="window.location.href = 'main.html';">Тема/мета/місце лабораторної роботи</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'installation.html';">Встановлення Node.js</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'package_json.html';">Файл package.json</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'http.html';">Створення веб-сервера HTTP за допомогою
+                    Node.js</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'index.html';">Створення програми Node.js</button>
+            </li>
+            <li>
+                <button onclick="window.location.href = '#';">Висновки</button>
+            </li>
+        </ul>
     </aside>
 
     <div class="info">
-        <h4>Приклади застосування</h4>
-        <ul>
-            <li>
-                Front-end Developer
-                <ol>
-                    <li>Mobile</li>
-                    <li>UI</li>
-                    <li>Node.js</li>
-                </ol>
-            </li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ul>
-        <img src="./img/screen_list.jpg" class="screen">
+        <p><b>Створення програми Node.js</b></p>
+        <p>Нижче наведено код для нашого застосунку</p>
+        <iframe class="forcode" src="./index.txt" frameborder="0"></iframe>
     </div>
 </body>
 

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>LAB4</title>
+    <title>LAB4</title>
     <meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<header>
+    <header>
         <h1>
-            ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ 
+            ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ
             <br>
             З ДИСЦИПЛІНИ «ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ»
         </h1>
@@ -25,22 +27,23 @@
                 <button onclick="window.location.href = '../lab 2/main.html';">Лабораторна робота №2</button>
                 <button onclick="window.location.href = '../lab3/main.html';">Лабораторна робота №3</button>
                 <button onclick="window.location.href = 'main.html';">Лабораторна робота №4</button>
-                <button onclick="window.location.href = '#';">Лабораторна робота №5</button>
-                <button onclick="window.location.href = '#';">Лабораторна робота №6</button>
+                <button onclick="window.location.href = '../lab5/main.html';">Лабораторна робота №5</button>
+                <button onclick="window.location.href = '../lab6/main.html';">Лабораторна робота №6</button>
                 <button onclick="window.location.href = '#';">Лабораторна робота №7</button>
                 <button onclick="window.location.href = '#';">Лабораторна робота №8</button>
                 <button onclick="window.location.href = '#';">Лабораторна робота №9</button>
             </div>
         </nav>
     </header>
-	<br>
-	<aside>
+    <br>
+    <aside>
         <ul>
             <li>
                 <button onclick="window.location.href = 'main.html';">Тема/мета/місце лабораторної роботи</button>
             </li>
             <li>
-                <button onclick="window.location.href = 'url.html';">Способи функціонального застосування JAVASCRIPT</button>
+                <button onclick="window.location.href = 'url.html';">Способи функціонального застосування
+                    JAVASCRIPT</button>
                 <ul>
                     <li>
                         <button onclick="window.location.href = 'url.html';">Схема URL</button>
@@ -58,20 +61,20 @@
             </li>
             <li>
                 <button onclick="window.location.href = 'array.html';">Масиви (4 пункт)</button>
-            </li>            
+            </li>
             <li>
                 <button onclick="window.location.href = 'task2.html';">Виконання 6 пункту</button>
             </li>
-            <li>            
+            <li>
                 <button onclick="window.location.href = 'summary.html';">Висновки</button>
             </li>
-        </ul>	
+        </ul>
     </aside>
 
-	<div class="info">
-		<p><b>Обробник подій</b></p>        
+    <div class="info">
+        <p><b>Обробник подій</b></p>
         <p><b>Приклад</b></p>
-		<form>
+        <form>
             <label for="name-input">Ім'я:</label>
             <input type="text" id="name-input" name="name-input">
             <br>
@@ -83,24 +86,24 @@
 
         <script>
             const submitButton = document.getElementById("submit-button");
-            
-            submitButton.addEventListener("click", submitForm);
-            
-            function submitForm() {
-              const nameInput = document.getElementById("name-input").value;
-              const emailInput = document.getElementById("email-input").value;
-              
-              if (!nameInput || !emailInput) {
-                alert("Будь ласка, заповніть всі поля форми.");
-                return;
-              }
 
-              alert(`Ім'я: ${nameInput} 
+            submitButton.addEventListener("click", submitForm);
+
+            function submitForm() {
+                const nameInput = document.getElementById("name-input").value;
+                const emailInput = document.getElementById("email-input").value;
+
+                if (!nameInput || !emailInput) {
+                    alert("Будь ласка, заповніть всі поля форми.");
+                    return;
+                }
+
+                alert(`Ім'я: ${nameInput} 
 Електронна пошта: ${emailInput}`);
-              
+
             }
         </script><br>
-		<p>HTML<br><br>
+        <p>HTML<br><br>
             <code>
                 &lt;label for="name-input"&gt;Ім'я:&lt;/label&gt; <br>
                 &lt;input type="text" id="name-input" name="name-input"&gt; <br>
@@ -128,6 +131,7 @@
                 }<br>
             </code>
         </p>
-	</div>
+    </div>
 </body>
+
 </html>
