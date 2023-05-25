@@ -35,10 +35,10 @@ export const register = async (req, res) => {
         res.json({
             newUser,
             token,
-            message: 'Регистрация прошла успешно.',
+            message: 'Регістрація успішна.',
         })
     } catch (error) {
-        res.json({ message: 'Ошибка при создании пользователя.' })
+        res.json({ message: 'Помилка при створенні користувача.' })
     }
 }
 
@@ -50,7 +50,7 @@ export const login = async (req, res) => {
 
         if (!user) {
             return res.json({
-                message: 'Такого юзера не существует.',
+                message: 'Такого користувача не існує.',
             })
         }
 
@@ -58,8 +58,9 @@ export const login = async (req, res) => {
 
         if (!isPasswordCorrect) {
             return res.json({
-                message: 'Неверный пароль.',
-            })
+                    user,
+                    message: 'Невірний пароль.',
+                })
         }
 
         const token = jwt.sign(
@@ -73,10 +74,10 @@ export const login = async (req, res) => {
         res.json({
             token,
             user,
-            message: 'Вы вошли в систему.',
+            message: 'Ви увійшли до системи.',
         })
     } catch (error) {
-        res.json({ message: 'Ошибка при авторизации.' })
+        res.json({ message: 'Помилка авторизації.' })
     }
 }
 
@@ -87,7 +88,7 @@ export const getMe = async (req, res) => {
 
         if (!user) {
             return res.json({
-                message: 'Такого юзера не существует.',
+                message: 'Такого користувача не існує.',
             })
         }
 
@@ -104,6 +105,6 @@ export const getMe = async (req, res) => {
             token,
         })
     } catch (error) {
-        res.json({ message: 'Нет доступа.' })
+        res.json({ message: 'Нема доступа.' })
     }
 }

@@ -34,13 +34,13 @@ export const PostPage = () => {
     const removePostHandler = () => {
         try {
             dispatch(removePost(params.id))
-            toast('Пост был удален')
+            toast('Пост був видалений')
             navigate('/posts')
         } catch (error) {
             console.log(error)
         }
     }
-
+    
     const handleSubmit = () => {
         try {
             const postId = params.id
@@ -50,7 +50,7 @@ export const PostPage = () => {
             console.log(error)
         }
     }
-
+    
     const fetchComments = useCallback(async () => {
         try {
             dispatch(getPostComments(params.id))
@@ -58,20 +58,20 @@ export const PostPage = () => {
             console.log(error)
         }
     }, [params.id, dispatch])
-
+    
     const fetchPost = useCallback(async () => {
         const { data } = await axios.get(`/posts/${params.id}`)
         setPost(data)
     }, [params.id])
-
+    
     useEffect(() => {
         fetchPost()
     }, [fetchPost])
-
+    
     useEffect(() => {
         fetchComments()
     }, [fetchComments])
-
+    
     if (post) {
         return (
             <div>
@@ -80,7 +80,7 @@ export const PostPage = () => {
                         Назад
                     </Link>
                 </button>
-
+    
                 <div className='flex gap-10 py-8'>
                     <div className='w-2/3'>
                         <div className='flex flex-col basis-1/4 flex-grow'>
@@ -100,7 +100,7 @@ export const PostPage = () => {
                                 )}
                             </div>
                         </div>
-
+    
                         <div className='flex justify-between items-center pt-2'>
                             <div className='text-sm text-white opacity-50'>
                                 {post.username}
@@ -113,7 +113,7 @@ export const PostPage = () => {
                         <p className='text-white opacity-60 text-sm pt-4'>
                             {post.text}
                         </p>
-
+    
                         <div className='flex gap-3 items-center mt-2 justify-between'>
                             <div className='flex gap-3 mt-4'>
                                 <button className='flex items-center justify-center gap-2 text-sm text-white opacity-50'>
@@ -124,7 +124,7 @@ export const PostPage = () => {
                                     <span>{post.comments?.length || 0} </span>
                                 </button>
                             </div>
-
+    
                             {user?._id === post.author && (
                                 <div className='flex gap-3 mt-4'>
                                     <button className='flex items-center justify-center gap-2 text-white opacity-50'>
@@ -151,7 +151,7 @@ export const PostPage = () => {
                                 type='text'
                                 value={comment}
                                 onChange={(e) => setComment(e.target.value)}
-                                placeholder='Comment'
+                                placeholder='Коментар'
                                 className='text-black w-full bg-white/10 border p-2 text-sm outline-none placeholder:text-gray-600'
                             />
                             <button
@@ -159,10 +159,10 @@ export const PostPage = () => {
                                 onClick={handleSubmit}
                                 className='flex justify-center items-center bg-white/50 text-sm text-black rounded-sm py-2 px-4 hover:text-gray-600'
                             >
-                                Отправить
+                                Відправити
                             </button>
                         </form>
-
+    
                         {comments?.map((cmt) => (
                             <CommentItem key={cmt._id} cmt={cmt} />
                         ))}

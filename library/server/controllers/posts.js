@@ -55,7 +55,7 @@ export const getAll = async (req, res) => {
         const popularPosts = await Post.find().limit(5).sort('-views')
 
         if (!posts) {
-            return res.json({ message: 'Постов нет' })
+            return res.json({ message: 'Постів немає' })
         }
 
         res.json({ posts, popularPosts })
@@ -96,13 +96,13 @@ export const getMyPosts = async (req, res) => {
 export const removePost = async (req, res) => {
     try {
         const post = await Post.findByIdAndDelete(req.params.id)
-        if (!post) return res.json({ message: 'Такого поста не существует' })
+        if (!post) return res.json({ message: 'Такої поста не існує' })
 
         await User.findByIdAndUpdate(req.userId, {
             $pull: { posts: req.params.id },
         })
 
-        res.json({ message: 'Пост был удален.' })
+        res.json({ message: 'Пост був видалений.' })
     } catch (error) {
         res.json({ message: 'Что-то пошло не так.' })
     }

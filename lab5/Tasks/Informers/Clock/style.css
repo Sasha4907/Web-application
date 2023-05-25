@@ -1,0 +1,35 @@
+.content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.timeDiv {
+  font-size: 48px;
+}
+
+#time {
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#sec {
+  font-size: 24px;
+  color: #000000;
+}
+
+#med {
+  font-size: 14px;
+  color: #000000;
+}
+
+#full-date {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+
+.font-color {
+  background-color: rgb(0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

@@ -52,7 +52,7 @@ export const EditPostPage = () => {
             onSubmit={(e) => e.preventDefault()}
         >
             <label className='text-gray-300 py-2 bg-gray-600 text-sm mt-2 flex items-center justify-center border-2 border-dotted cursor-pointer'>
-                Прикрепить изорбажение:
+                Прикріпити зображення:
                 <input
                     type='file'
                     className='hidden'
@@ -76,9 +76,9 @@ export const EditPostPage = () => {
                     />
                 )}
             </div>
-
+    
             <label className='text-sm text-white opacity-70'>
-                Заголовок поста:
+                Заголовок посту:
                 <input
                     type='text'
                     value={title}
@@ -87,30 +87,30 @@ export const EditPostPage = () => {
                     className='mt-1 text-black w-full rounded-lg bg-gray-400 border py-1 px-2 text-sm outline-none placeholder:text-gray-700'
                 />
             </label>
-
+    
             <label className='text-sm text-white opacity-70'>
-                Текст поста:
+                Текст посту:
                 <textarea
                     onChange={(e) => setText(e.target.value)}
                     value={text}
-                    placeholder='Текст поста'
+                    placeholder='Текст посту'
                     className='mt-1 text-black w-full rounded-lg bg-gray-400 border py-1 px-2 text-sm outline-none resize-none h-40 placeholder:text-gray-700'
                 />
             </label>
-
+    
             <div className='flex gap-8 items-center justify-center mt-4'>
                 <button
                     onClick={submitHandler}
                     className='flex justify-center items-center bg-gray-600 text-sm text-white rounded-sm py-2 px-4'
                 >
-                    Обновить
+                    Оновити
                 </button>
-
+    
                 <button
                     onClick={clearFormHandler}
                     className='flex justify-center items-center bg-red-500 text-sm text-white rounded-sm py-2 px-4'
                 >
-                    Отменить
+                    Скасувати
                 </button>
             </div>
         </form>

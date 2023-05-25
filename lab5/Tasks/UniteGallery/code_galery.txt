@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Галерея</title>
+	<!-- Підключення jQuery бібліотеки -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Підключення бібліотеки Unite Gallery -->
+	<script type="text/javascript" src="unitegallery/js/unitegallery.min.js"></script>
+	<link rel="stylesheet" href="unitegallery/css/unite-gallery.css" type="text/css" />
+	<!-- Підключення стилів і скриптів для теми за замовчуванням -->
+	<script type="text/javascript" src="unitegallery/themes/default/ug-theme-default.js"></script>
+	<link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css" type="text/css" />
+	<!-- Створення стилів для галереї -->
+	<style>
+		#gallery {
+			margin: 0 auto;
+			max-width: 900px;
+		}
+	</style>
+</head>
+<body>
+<div id="gallery" style="display: none;">
+	<!-- Додавання зображень до галереї зі зв'язаними даними -->
+	<img alt="Зображення 1"
+		 src="http://loremflickr.com/100/55/nature/?1"
+		 data-image="http://loremflickr.com/900/500/nature/?1"
+		 data-description="Опис Зображення 1">
+
+	<img alt="Зображення 2"
+		 src="http://loremflickr.com/100/55/nature/?1"
+		 data-image="http://loremflickr.com/900/500/nature/?1"
+		 data-description="Опис Зображення 2">
+
+	<img alt="Зображення 3"
+		 src="http://loremflickr.com/100/55/nature/?1"
+		 data-image="http://loremflickr.com/900/500/nature/?1"
+		 data-description="Опис Зображення 3">
+
+	<img alt="Зображення 4"
+		 src="http://loremflickr.com/100/55/nature/?1"
+		 data-image="http://loremflickr.com/900/500/nature/?1"
+		 data-description="Опис Зображення 4">
+
+	<img alt="Зображення 5"
+		 src="http://loremflickr.com/100/55/nature/?1"
+		 data-image="http://loremflickr.com/900/500/nature/?1"
+		 data-description="Опис Зображення 5">
+</div>
+<script type="text/javascript">
+	// Виконується, коли документ готовий
+	$(document).ready(function () {
+		// Ініціалізація Unite Gallery
+		$("#gallery").unitegallery();
+	});
+</script>
+</body>
+</html>

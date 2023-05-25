@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="jquery-ui.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+        <script>
+          $(document).ready( function() {
+            $( "#accordion" ).accordion();
+            $('#menu').menu();
+            $( document ).tooltip();
+            $("#showLeftPanel").click(function(){
+              $("#menu").fadeToggle();
+            });
+          } );
+        </script>
+    </head>
+    <body>
+        <div id="accordion">
+            <h3>Section 1 - tooltip in text</h3>
+            <div>
+              <p title="Demonstration for jQuery tooltip">
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3 id="showLeftPanel">Section 2 - toggle left menu</h3>
+            <div>
+              <p>
+              Click here to toggle left menu.
+              </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+              mauris vel est.
+              </p>
+              <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+
+
+        <ul id="menu">
+          <li>
+            <div>Item 1</div>
+          </li>
+          <li>
+            <div>Item 2</div>
+          </li>
+          <li>
+            <div>Item 3</div>
+            <ul>
+              <li>
+                <div>Item 3-1</div>
+              </li>
+              <li>
+                <div>Item 3-2</div>
+              </li>
+              <li>
+                <div>Item 3-3</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>Item 4</div>
+          </li>
+          <li>
+            <div>Item 5</div>
+          </li>
+        </ul>
+    </body>
+</html>

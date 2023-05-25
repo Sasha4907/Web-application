@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.height {
+  height: 10px;
+}
+
+.container:after {
+  // float not allowed on both sides
+  clear: both;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  // element behave like a table
+  display: table;
+}
+
+.item img {
+  max-height: 100%;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.first-item {
+  clear: both;
+}
+
+.item {
+  margin-bottom: 15px;
+  float: left;
+}
+
+.first-item {
+  clear: both;
+}
+
+.last-row,
+.last-row ~ .item {
+  // remove bottom margin on last row
+  margin-bottom: 0;
+}

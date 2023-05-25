@@ -6,7 +6,7 @@ export const createComment = async (req, res) => {
         const { postId, comment } = req.body
 
         if (!comment)
-            return res.json({ message: 'Комментарий не может быть пустым' })
+            return res.json({ message: 'Коментар не може бути порожнім' })
 
         const newComment = new Comment({ comment })
         await newComment.save()
