@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>LAB1</title>
+    <title>LAB8</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,15 +22,15 @@
             <img src="./img/kobernik.jpg">
         </figure>
         <nav>
-            <div class="labs">
-                <button onclick="window.location.href = 'main.html';">Лабораторна робота №1</button>
+            <div id="labs">
+                <button onclick="window.location.href = '../lab 1/main.html';">Лабораторна робота №1</button>
                 <button onclick="window.location.href = '../lab 2/main.html';">Лабораторна робота №2</button>
                 <button onclick="window.location.href = '../lab3/main.html';">Лабораторна робота №3</button>
                 <button onclick="window.location.href = '../lab4/main.html';">Лабораторна робота №4</button>
                 <button onclick="window.location.href = '../lab5/main.html';">Лабораторна робота №5</button>
                 <button onclick="window.location.href = '../lab6/main.html';">Лабораторна робота №6</button>
                 <button onclick="window.location.href = '../lab7/main.html';">Лабораторна робота №7</button>
-                <button onclick="window.location.href = '../lab8/main.html';">Лабораторна робота №8</button>
+                <button onclick="window.location.href = 'main.html';">Лабораторна робота №8</button>
                 <button onclick="window.location.href = '#';">Лабораторна робота №9</button>
             </div>
         </nav>
@@ -38,23 +38,53 @@
     <br>
     <aside>
         <button onclick="window.location.href = 'main.html';">Тема/мета/місце лабораторної роботи</button>
-        <button onclick="window.location.href = 'description.html';">Опис предметного середовища</button>
-        <button onclick="window.location.href = 'design.html';">Дизайн WEB-застосунка</button>
-        <button onclick="window.location.href = 'table.html';">HTML-код таблиць</button>
-        <button onclick="window.location.href = 'image.html';">HTML-код зображення</button>
-        <button onclick="window.location.href = 'list.html';">HTML-код списків</button>
-        <button onclick="window.location.href = 'link.html';">HTML-код посилань</button>
+        <button onclick="window.location.href = 'metod.html';">Методи та дії</button>
+        <button onclick="window.location.href = 'crud.html';">Операції CRUD</button>
+        <button onclick="window.location.href = 'example.html';">Приклад в нашому застосунку</button>
         <button onclick="window.location.href = 'summary.html';">Висновки</button>
     </aside>
 
     <div class="info">
-        <h4>Висновки роботи</h4>
-        <p>В ході першої лабораторної роботи було опрацьовано предметну область майбутнього WEB-застосунка. Були
-            визначені основні функції майбутнього застосунку. Бригада ознайомилася з основними елементами мови розмітки
-            HTML. Реалізацію та функціонал цих елементів продеменстровано на прикладі звітного HTML-документу.</p>
-        <br>
-        <p>Особливу увагу було приділено роботі з такими елементами як таблиці, зображення, посилання, текст та списки.
-        </p>
+      <table>
+        <tr>
+          <th>Операція</th>
+          <th>Опис</th>
+          <th>Команда MongoDB</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Create</td>
+          <td rowspan="2">Створення нового запису</td>
+          <td>db.collection.insertOne()</td>
+        </tr>
+        <tr>
+          <td>db.collection.insertMany()</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Read</td>
+          <td rowspan="2">Читання даних з бази даних</td>
+          <td>db.collection.find()</td>
+        </tr>
+        <tr>
+          <td>db.collection.findOne()</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Update</td>
+          <td rowspan="2">Оновлення існуючого запису</td>
+          <td>db.collection.updateOne()</td>
+        </tr>
+        <tr>
+          <td>db.collection.updateMany()</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Delete</td>
+          <td rowspan="2">Видалення запису з бази даних</td>
+          <td>db.collection.deleteOne()</td>
+        </tr>
+        <tr>
+          <td>db.collection.deleteMany()</td>
+        </tr>
+      </table>
+      
     </div>
 </body>
 
