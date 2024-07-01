@@ -30,7 +30,7 @@ export const MainPage = () => {
                     {posts?.map((post, idx) => (
                         <PostItem key={idx} post={post} />
                     ))}
-                </div>
+                </div
                 <div className='basis-2/5'>
                     <div className='text-sm text-black backdrop-opacity-5 backdrop-invert bg-white rounded-sm mt-8 px-4 py-2 w-60'>
                         Рекомендації:
